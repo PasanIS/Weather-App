@@ -42,13 +42,13 @@ body {
     width: 100%;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
+    padding: 0px 20px;
     box-shadow: 0px 4px 6px rgba(163, 64, 64, 0.1);
     text-shadow: 
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
+        -0.5px -0.5px 0 #000,
+         0.5px -0.5px 0 #000,
+        -0.5px  0.5px 0 #000,
+         0.5px  0.5px 0 #000;
 }
 
 .navbar-brand h2 {
@@ -242,6 +242,65 @@ body {
 
 .alert p {
     margin-bottom: 5px;
+}
+
+/*-----History */
+.search2-container {
+    display: flex;
+    gap: 5%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.search2-container input {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--text-color);
+    width: 65%;
+    border-radius: 10px;
+}
+
+.search2-container button {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+    transition: background-color var(--transition-speed);
+}
+
+.search2-container button:hover {
+    background-color: var(--secondary-color);
+}
+
+.search2-container input:focus, .search-container button:focus, .unit-toggle button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.history-section {
+    margin-top: 20px;
+}
+
+/* -----Footer */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(52, 58, 64, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    font-size: 14px; 
+}
+
+.fixed-footer p {
+    margin: 0;
+    line-height: 1.2; /* Optional: Adjust line height for better spacing */
 }
 
 /* Responsive Styles */

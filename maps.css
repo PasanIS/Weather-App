@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --primary-color: #af9b92;
+    --secondary-color: #5d5b6a;
+    --text-color: black;
+    --background-color: #dedede;
+    --card-bg: #8b7d78;
+    --transition-speed: 0.3s ease-in-out;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #5d5b6a;
+    background-image: url('images/clear_night.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 60px;
+}
+
+/* Navbar*/
+.navbar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 20px;
+    box-shadow: 0px 4px 6px rgba(163, 64, 64, 0.1);
+    text-shadow: 
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.navbar-brand h2 {
+    margin: 0;
+    color: white;
+    display: inline-block;
+}
+
+.navbar-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a.active {
+    color: yellow;
+}
+
+.navbar-links a:hover {
+    color: lightyellow;
+}
+
+/* Input and search button*/
+#locationInput {
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #3f3e3e;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+
+#searchButton {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* -----Footer */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(52, 58, 64, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    font-size: 14px; 
+}
+
+.fixed-footer p {
+    margin: 0;
+    line-height: 1.2; /* Optional: Adjust line height for better spacing */
+}
