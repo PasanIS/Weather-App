@@ -1,4 +1,3 @@
-/*---General Styles---*/
 * {
     margin: 0;
     padding: 0;
@@ -31,10 +30,11 @@ body {
         -1px -1px 0 #252424,
          1px -1px 0 #252424,
         -1px  1px 0 #252424,
-         1px  1px 0 #252424; 
+         1px  1px 0 #252424;
 }
 
-/*---Navbar---*/
+/*-----------------------------------------------------------
+/* Navbar*/
 .navbar-section {
     position: fixed;
     top: 0;
@@ -72,24 +72,28 @@ body {
     color: lightyellow;
 }
 
-/*---Container---*/
+/* -------------------------------------------
+
+/* Container */
 .container {
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 15px;
 }
 
+/* Search Section */
 .search-container {
     display: flex;
-    gap: 10px;
-    margin-top: 30px;
+    gap: 5%;
+    margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .search-container input {
     padding: 0.5rem 1.5rem;
     border: 1px solid var(--text-color);
-    width: 60%;
+    width: 65%;
     border-radius: 10px;
 }
 
@@ -100,6 +104,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    width: 30%;
     transition: background-color var(--transition-speed);
 }
 
@@ -112,7 +117,7 @@ body {
     outline-offset: 2px;
 }
 
-/*---Unit Toggle Button---*/
+/* Unit Toggle Button */
 .unit-toggle {
     margin-top: 0.5rem;
     text-align: center;
@@ -140,47 +145,50 @@ body {
     color: var(--text-color);
 }
 
-/*---Current Weather Section---*/
+/* Current Weather Section */
 .current-weather-container {
     background-color: rgba(139, 125, 120, 0.5);
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     color: white;
     text-align: center;
     min-height: 300px;
-    width: 85%;
+    width: 100%;
     border-radius: 10px;
 }
 
 .current-weather-container h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .current-weather-container h4 {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
 .current-weather-container h1 {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     margin-top: 20px;
 }
 
 .current-weather-container p {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-/*---Weather Icon---*/
+/* Weather Icon */
 #result img {
-    width: 50px;
+    width: 35px;
     margin-top: 1rem;
 }
 
-/*---Forecast Section---*/
+/* Forecast Section */
 .forecast-section {
     background-color: rgba(139, 125, 120, 0.5);
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-right: 0px;
     color: white;
     border-radius: 10px;
 }
@@ -208,11 +216,11 @@ body {
 }
 
 .forecast-card img {
-    width: 50px;
+    width: 35px;
     margin-bottom: 0.5rem;
 }
 
-/*---Alerts Section---*/
+/* Alerts Section */
 .alert-section {
     background-color: rgba(139, 125, 120, 0.5);
     padding: 15px;
@@ -236,7 +244,7 @@ body {
     margin-bottom: 5px;
 }
 
-/*----Responsive Styles---*/
+/* Responsive Styles */
 @media (max-width: 768px) {
     #forecast-cards {
         flex-direction: column;
